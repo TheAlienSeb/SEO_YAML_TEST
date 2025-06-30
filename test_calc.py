@@ -16,7 +16,7 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(self.calc.mul(2, 3), 6)
 
     def test_div(self):
-        self.assertEqual(self.calc.div(10,5),2)
+        self.assertEqual(self.calc.div(10,5), 2)
         with self.assertRaises(ZeroDivisionError):
             self.calc.div(10,0)
 
