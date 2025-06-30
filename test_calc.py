@@ -16,12 +16,12 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(self.calc.mul(2, 3), 6)
 
     def test_div(self):
-        self.assertEqual(self.calc.div(10,5), 2)
+        self.assertEqual(self.calc.div(10, 5), 2)
         with self.assertRaises(ZeroDivisionError):
-            self.calc.div(10,0)
+            self.calc.div(10, 0)
 
     def test_pow(self):
-        self.assertEqual(self.calc.pow(2,2),4)
+        self.assertEqual(self.calc.pow(2, 2), 4)
 
     def test_sqrt(self):
-        self.assertEqual(self.calc.sqrt(9),3)
+        self.assertEqual(self.calc.sqrt(9), 3)
